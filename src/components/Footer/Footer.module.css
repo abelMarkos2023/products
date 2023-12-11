@@ -1,0 +1,130 @@
+.cFooterWrapper {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cFooterWrapper>p {
+    width: 24rem;
+    font-size: 1.5rem;
+    align-items: center;
+    text-align: center;
+    color: rgb(108, 108, 105);
+}
+
+.cFooterWrapper>hr {
+    height: 1px;
+    border: none;
+    background-color: white;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.cFooter {
+    display: flex;
+    align-items: center;
+    gap: 9rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.title {
+    font-weight: 800;
+    font-style: 1.8rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    align-self: flex-start;
+}
+
+.logo>img {
+    width: 4rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    grid-template: 1rem;
+}
+
+.contactItem {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.account,
+.company,
+.resource {
+    align-self: flex-start;
+}
+
+.contactItem>span {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.icon {
+    width: 2rem;
+}
+
+@media screen and (max-width:640px) {
+    hr {
+        display: none;
+    }
+    .cFooterWrapper {
+        max-width: 100%;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+    .cFooter {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 1.8rem;
+        flex-wrap: wrap;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        align-self: flex-start;
+    }
+    .logo>img {
+        width: 1.5rem;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        grid-template: 0.4rem;
+    }
+    .contactItem {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    .account,
+    .company,
+    .resource {
+        align-self: flex-start;
+    }
+    .contactItem>span {
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+    .icon {
+        width: 1rem;
+    }
+}
